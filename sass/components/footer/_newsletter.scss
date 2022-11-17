@@ -1,0 +1,42 @@
+.newsletter {
+    @include align_center;
+    padding: 40px 0px;
+    gap: 15px;
+    justify-content: center;
+
+    h3 {
+        width: 307px;
+        font-weight: 700;
+        font-size: 24px;
+        color: #000000;
+    }
+
+    form {
+        @include align_center;
+        position: relative;
+
+        input[type="text"] {
+            background: #FFFFFF;
+            border: 1px solid #353535;
+            border-radius: 4px;
+            width: 604px;
+            height: 38px;
+            padding: 0;
+            padding-left: 24px;
+        }
+
+        input[type="submit"] {
+            @include main-button();
+            font-weight: 700;
+            font-size: 16px;
+            color: #FFFFFF;
+            width: 131px;
+            height: 40px;
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-radius: 4px;
+        }
+    }
+}
